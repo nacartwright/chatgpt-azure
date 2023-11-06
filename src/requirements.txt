@@ -95,7 +95,9 @@ priority==2.0.0
 pycparser==2.21
     # via cffi
 pyjwt[crypto]==2.8.0
-    # via msal
+    # via
+    #   msal
+    #   pyjwt
 python-dotenv==0.21.1
     # via
     #   -r src/requirements.in
@@ -121,8 +123,10 @@ typing-extensions==4.8.0
     # via azure-core
 urllib3==2.0.6
     # via requests
-uvicorn[standard]==0.23.2
-    # via -r src/requirements.in
+uvicorn[standard]==0.24.0
+    # via
+    #   -r src/requirements.in
+    #   uvicorn
 uvloop==0.17.0
     # via uvicorn
 watchfiles==0.20.0
